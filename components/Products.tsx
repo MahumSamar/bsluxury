@@ -18,7 +18,7 @@ import { ProductCard } from "./ProductCard";
 export const Products = () => {
   return (
     <div>
-      <div className="flex flex-col lg:flex-row items-center justify-between bg-[#F9F9F9] p-3 my-4 rounded-sm gap-6 lg:gap-0">
+      <div className="flex flex-col lg:flex-row items-center justify-between bg-[#F9F9F9] p-3 my-4 rounded-md gap-6 lg:gap-0">
         <div className="grid grid-cols-3 gap-2">
           <Selector selectorList={category} name="category"/>
           <Selector selectorList={size} name="size"/>

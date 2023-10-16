@@ -4,7 +4,7 @@ import React from "react";
 
 export const ProductCard = ({ product }: any) => {
   return (
-    <div className="relative grid grid-cols-1 md:grid-cols-3 md:gap-6 my-6 shadow-md">
+    <div className="relative grid grid-cols-1 md:grid-cols-3 md:gap-6 my-6 shadow-md rounded-md">
       {product.discount && (
         <div className="absolute text-white bg-black top-2 right-2 rounded-full w-12 p-1 text-center flex flex-col">
           <p>
@@ -17,7 +17,7 @@ export const ProductCard = ({ product }: any) => {
         <Image
           src={product.image}
           alt={product.title}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover rounded-t-md"
         />
       </div>
       <div className="col-span-2 grid grid-cols-1 lg:grid-cols-3 gap-6 p-4">
@@ -29,9 +29,9 @@ export const ProductCard = ({ product }: any) => {
           <p className="text-md text-[#303030]">{product.description}</p>
           {product.colors && (
             <div className="flex gap-2 my-2">
-              {product.colors.map((color: any) => (
+              {product.colors.map((color: any,index:any) => (
                 <div
-                  key={color}
+                  key={index}
                   style={{ backgroundColor: color.value }}
                   className="rounded-full w-5 h-5"
                 />
@@ -49,7 +49,7 @@ export const ProductCard = ({ product }: any) => {
             )}
             <p className="text-xl">{product.price}</p>
           </div>
-          <button className="w-full flex items-center justify-center gap-3 rounded-sm bg-black text-white py-2 text-md">
+          <button className="w-full flex items-center justify-center gap-3 rounded-md bg-black text-white py-2 text-md">
             <Image src={basketWhite} alt="cart" className="w-5" />
             ADD TO CART
           </button>

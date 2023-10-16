@@ -3,21 +3,20 @@ import Image from "next/image";
 import React from "react";
 import { Logo } from "./Logo";
 import Link from "next/link";
-import { ShoppingBagIcon } from "@heroicons/react/24/outline";
 
 export const Header = () => {
   return (
     <>
-      <div className="bg-[#DBE5DB] flex justify-center items-center gap-6 p-3">
+      <div className="bg-[#DBE5DB] flex justify-center items-center gap-5 md:gap-6 p-3">
         <Image src={shipping} alt="Shipping icon" className="w-8" />
-        <p className="text-xs md:text-md font-bold">
+        <p className="text-xs md:text-md lg:text-xl font-bold">
           FREE SHIPPING ON ORDERS OF $50 OR MORE
         </p>
-        <p className="text-xs">DETAILS</p>
+        <p className="text-xs lg:text-md">DETAILS</p>
       </div>
-      <div className="relative flex items-center justify-center border-b p-3 max-w-7xl mx-auto">
+      <div className="md:relative flex items-center justify-between md:justify-center border-b p-3 max-w-7xl mx-auto">
         <Logo />
-        <div className="absolute right-3 flex gap-4">
+        <div className="md:absolute md:right-3 flex gap-4">
           <Link href="/">
             <span className="text-md uppercase">Sign in/ Sign up</span>
           </Link>

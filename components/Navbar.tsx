@@ -12,13 +12,13 @@ export const Navbar = () => {
           <Link
             href="/"
             key={nav.id}
-            className="hover:text-gray text-xs font-medium cursor-pointer"
+            className="hover:text-gray text-xs md:text-md lg:text-xl font-medium hover:cursor-pointer"
           >
             {nav.title}
           </Link>
         ))}
       </div>
-      <div className="bg-[#F9F9F9] rounded-sm flex items-center justify-between py-4 px-3 text-xs">
+      <div className="bg-[#F9F9F9] rounded-md flex items-center justify-between py-4 px-3 text-xs md:text-md lg:text-xl ">
         <div className="flex gap-1 md:gap-2 ">
           <Link href="/">Home</Link>
           <ChevronRightIcon className="text-gray-500 w-4" />

@@ -24,7 +24,7 @@ export default function Home() {
       <SignUpFirstOrder />
       <Footer />
       <div className="bg-[#F4F4F4] flex justify-center items-center p-3">
-        <p className="text-[12px]">
+        <p className="text-[14px]">
         All Rights Reserved © 2019
         </p>
       </div>

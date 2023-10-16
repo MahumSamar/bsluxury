@@ -43,7 +43,7 @@ export const RecommendedProductsCard = () => {
       </div>
       <div className="flex overflow-x-scroll overflow-hidden no-scrollbar gap-4 my-6" ref={elementRef}>
         {recommendedProducts.map((product, i) => (
-          <div key={product.id} className="bg-white drop-shadow-md my-2">
+          <div key={product.id} className="bg-white shadow-md my-2 rounded-md">
             <div>
               <Image
                 key={i}

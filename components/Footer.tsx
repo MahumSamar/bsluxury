@@ -34,7 +34,7 @@ export const Footer = () => {
       </div>
       <FooterSection section={customerService} title="CUSTOMER SERVICE" />
       <div>
-        <p className="text-xs font-bold">Follow Us</p>
+        <p className="text-md md:text-xs lg:text-md xl:text-xl font-bold">Follow Us</p>
         <div className="flex flex-wrap gap-1 mt-2">
           {socials.map((social: any, index: any) => (
             <Link href={social.link} key={index}>
@@ -42,7 +42,7 @@ export const Footer = () => {
             </Link>
           ))}
         </div>
-        <p className="text-xs font-bold mt-4">Payment Methods</p>
+        <p className="text-md md:text-xs lg:text-md xl:text-xl font-bold mt-4">Payment Methods</p>
         <div className="flex flex-wrap gap-1 mt-2">
           {cards.map((card: any, index: any) => (
             <Image key={index} src={card.icon} alt={card.name} className="w-7" />
