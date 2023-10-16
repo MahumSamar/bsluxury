@@ -55,7 +55,7 @@ export const RecommendedProductsCard = () => {
             <div className="flex flex-col items-center justify-between p-2">
               <p className="text-xs text-gray-500">{product.category}</p>
               <p className="whitespace-nowrap text-md font-bold">{product.title}</p>
-              <p className="font-bold text-md">{product.price}</p>
+              <p className="font-bold text-md mt-3">{product.price}</p>
             </div>
           </div>
         ))}
