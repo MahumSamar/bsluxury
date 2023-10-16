@@ -15,9 +15,9 @@ export const Header = () => {
         </p>
         <p className="text-xs">DETAILS</p>
       </div>
-      <div className="flex items-center justify-between border-b p-3 max-w-7xl mx-auto">
+      <div className="relative flex items-center justify-center border-b p-3 max-w-7xl mx-auto">
         <Logo />
-        <div className="flex gap-4">
+        <div className="absolute right-3 flex gap-4">
           <Link href="/">
             <span className="text-md uppercase">Sign in/ Sign up</span>
           </Link>

@@ -48,7 +48,7 @@ export const Products = () => {
       {products03.map((product, index) => (
         <div
           key={index}
-          className="flex flex-col md:flex-row items-center justify-between gap-6 my-3 drop-shadow-md"
+          className="flex flex-col md:flex-row items-center justify-between gap-6 my-6 drop-shadow-md"
         >
           <Image
             src={product.image}
