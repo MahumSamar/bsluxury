@@ -4,7 +4,7 @@ import React from "react";
 
 export const ProductCard = ({ product }: any) => {
   return (
-    <div className="relative flex flex-col md:flex-row items-center justify-between gap-6 my-6 drop-shadow-md">
+    <div className="relative grid grid-cols-1 md:grid-cols-3 md:gap-6 my-6 shadow-md">
       {product.discount && (
         <div className="absolute text-white bg-black top-2 right-2 rounded-full w-12 p-1 text-center flex flex-col">
           <p>
@@ -13,13 +13,15 @@ export const ProductCard = ({ product }: any) => {
           <p className="text-xs">OFF</p>
         </div>
       )}
-      <Image
-        src={product.image}
-        alt={product.title}
-        className="w-full h-full object-cover"
-      />
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <div className="lg:col-span-2">
+      <div>
+        <Image
+          src={product.image}
+          alt={product.title}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="col-span-2 grid grid-cols-1 lg:grid-cols-3 gap-6 p-4">
+        <div className="lg:col-span-2 flex flex-col justify-center">
           <div className="mb-6">
             <p className="text-md text-gray-500">{product.category}</p>
             <p className="text-xl font-bold">{product.title}</p>
