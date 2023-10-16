@@ -28,7 +28,7 @@ export const Navbar = () => {
           <p><span className="font-bold">3087</span> items</p>
           <p>|</p>
           <p>Sort by price:</p>
-          <Selector selectorList={priceSelector}/>
+          <Selector selectorList={priceSelector} name="price"/>
         </div>
       </div>
     </>

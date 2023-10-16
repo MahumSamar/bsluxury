@@ -19,9 +19,9 @@ export const Products = () => {
     <div>
       <div className="flex flex-col lg:flex-row items-center justify-between bg-[#F9F9F9] p-3 my-4 rounded-sm gap-6 lg:gap-0">
         <div className="grid grid-cols-3 gap-2">
-          <Selector selectorList={category} defaultValue="Category" />
-          <Selector selectorList={size} defaultValue="Size" />
-          <Selector selectorList={color} defaultValue="Color" />
+          <Selector selectorList={category} name="category"/>
+          <Selector selectorList={size} name="size"/>
+          <Selector selectorList={color} name="color"/>
         </div>
         <div className="grid grid-cols-2 md:flex gap-4">
           <p>3087 items</p>
@@ -38,7 +38,7 @@ export const Products = () => {
           </div>
           <div className="flex gap-3 col-span-2 ">
             <p>Sort by price: </p>
-            <Selector selectorList={priceSelector} />
+            <Selector selectorList={priceSelector} name="price"/>
           </div>
         </div>
       </div>

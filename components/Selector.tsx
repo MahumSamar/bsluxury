@@ -1,9 +1,8 @@
 import React from 'react'
 
-export const Selector = ({selectorList,defaultValue}:any) => {
+export const Selector = ({selectorList,name}:any) => {
   return (
-    <select name="price" id="price" className="bg-transparent px-1 md:px-2">
-    {defaultValue && <option value="none" selected disabled hidden>{defaultValue}</option> }
+    <select name={name} id={name} className="bg-transparent px-1 md:px-2">
     {
       selectorList.map((option:any) => (
         <option key={option.value} value={option.value}>{option.label}</option>

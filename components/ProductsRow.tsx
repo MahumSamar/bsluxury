@@ -3,7 +3,11 @@ import React from "react";
 
 export const ProductsRow = ({ products, columns }: any) => {
   return (
-    <div className={`grid grid-cols-1 md:grid-cols-${columns} gap-12 mt-4`}>
+    <div
+      className={`grid grid-cols-1 ${
+        columns == 3 ? "md:grid-cols-3" : "md:grid-cols-4"
+      }  gap-12 mt-4`}
+    >
       {products.map((product: any, i: any) => (
         <div key={i} className="bg-white rounded-sm drop-shadow-md my-2">
           <div>

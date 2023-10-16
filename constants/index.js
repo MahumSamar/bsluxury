@@ -272,6 +272,10 @@ export const cards = [
 // products selector values
 export const category = [
   {
+    label: "Category",
+    value: "none",
+  },
+  {
     label: "Women",
     value: "women",
   },
@@ -299,6 +303,10 @@ export const category = [
 
 export const size = [
   {
+    label: "Size",
+    value: "none",
+  },
+  {
     label: "X-Small",
     value: "xs",
   },
@@ -317,6 +325,10 @@ export const size = [
 ];
 
 export const color = [
+  {
+    label: "Color",
+    value: "none",
+  },
   {
     label: "White",
     value: "white",
@@ -353,8 +365,8 @@ export const products01 = [
     category: "Women",
     title: "Floral Print Wrap Dress",
     price: "$21.50",
-    discount:40,
-    originalPrice:"$65.00"
+    discount: 40,
+    originalPrice: "$65.00",
   },
   {
     image: img05,
@@ -396,16 +408,18 @@ export const products03 = [
     image: img07,
     category: "Women",
     title: "Floral Print Wrap Dress",
-    description:"Maecenas vel nisl blandit lorem fermentum rutrum. Phasellus consectetur lacus sodales, euismod urna non, interdum augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean commodo purus neque, iaculis vestibulum mi tristique a. Donec tristique augue magna, ac gravida ligula tempus vitae. Aliquam pulvinar ex vel tellus tincidunt, in luctus turpis posuere. Nulla tincidunt scelerisque leo et consectetur.",
+    description:
+      "Maecenas vel nisl blandit lorem fermentum rutrum. Phasellus consectetur lacus sodales, euismod urna non, interdum augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean commodo purus neque, iaculis vestibulum mi tristique a. Donec tristique augue magna, ac gravida ligula tempus vitae. Aliquam pulvinar ex vel tellus tincidunt, in luctus turpis posuere. Nulla tincidunt scelerisque leo et consectetur.",
     price: "$21.50",
-    discount:40,
-    originalPrice:"$134.00"
+    discount: 40,
+    originalPrice: "$134.00",
   },
   {
     image: img08,
     category: "Women",
     title: "Floral Print Wrap Dress",
-    description:"Maecenas vel nisl blandit lorem fermentum rutrum. Phasellus consectetur lacus sodales, euismod urna non, interdum augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean commodo purus neque, iaculis vestibulum mi tristique a. Donec tristique augue magna, ac gravida ligula tempus vitae. Aliquam pulvinar ex vel tellus tincidunt, in luctus turpis posuere. Nulla tincidunt scelerisque leo et consectetur.",
+    description:
+      "Maecenas vel nisl blandit lorem fermentum rutrum. Phasellus consectetur lacus sodales, euismod urna non, interdum augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean commodo purus neque, iaculis vestibulum mi tristique a. Donec tristique augue magna, ac gravida ligula tempus vitae. Aliquam pulvinar ex vel tellus tincidunt, in luctus turpis posuere. Nulla tincidunt scelerisque leo et consectetur.",
     price: "$21.50",
   },
 ];

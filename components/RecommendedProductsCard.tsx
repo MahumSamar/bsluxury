@@ -47,7 +47,6 @@ export const RecommendedProductsCard = () => {
             <div>
               <Image
                 key={i}
-                loading="lazy"
                 alt={product.title}
                 src={product.image}
                 className="w-full h-full max-h-52 object-cover"
