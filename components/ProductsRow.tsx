@@ -9,7 +9,6 @@ export const ProductsRow = ({ products, columns }: any) => {
           <div>
             <Image
               key={i}
-              loading="lazy"
               alt={product.title}
               src={product.image}
               className="w-full object-contain"
