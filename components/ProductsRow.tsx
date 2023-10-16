@@ -1,3 +1,4 @@
+import { HeartIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import React from "react";
 
@@ -18,18 +19,27 @@ export const ProductsRow = ({ products, columns }: any) => {
               <p className="text-xs">OFF</p>
             </div>
           )}
-          <div>
+          <div className="relative">
             <Image
               key={i}
               alt={product.title}
               src={product.image}
-              className="w-full rounded-t-md object-contain"
+              className="w-full inset-0 rounded-t-md object-contain z-0"
             />
+            <div className="opacity-0 hover:opacity-100 absolute inset-0 z-10 flex items-end justify-between px-4 bottom-3 ">
+              <div className="flex items-center justify-between w-full gap-4">
+                <HeartIcon className="w-10 h-8 text-center bg-white rounded-full p-1 hover:cursor-pointer" />
+                <button className="w-full flex items-center justify-center gap-3 rounded-md bg-black text-white py-2 text-md">
+                  ADD TO CART
+                </button>
+                <MagnifyingGlassIcon className="w-10 h-8 text-center bg-white rounded-full p-1 hover:cursor-pointer" />
+              </div>
+            </div>
           </div>
           <div className="flex flex-col items-center justify-between p-2">
             {product.colors ? (
               <div className="flex gap-2 my-2">
-                {product.colors.map((color: any,index:any) => (
+                {product.colors.map((color: any, index: any) => (
                   <div
                     key={index}
                     style={{ backgroundColor: color.value }}
@@ -37,7 +47,9 @@ export const ProductsRow = ({ products, columns }: any) => {
                   />
                 ))}
               </div>
-            ) : <div className="h-9"/>}
+            ) : (
+              <div className="h-9" />
+            )}
             <p className="text-center text-sm xl:whitespace-nowrap lg:text-xl ">
               {product.title}
             </p>
