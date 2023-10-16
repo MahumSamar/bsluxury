@@ -28,6 +28,8 @@ import img05 from "./img05.png";
 import img06 from "./img06.png";
 import img07 from "./img07.png";
 import img08 from "./img08.png";
+import color01 from "./color01.png";
+import color02 from "./color02.png";
 
 export {
   shipping,
@@ -59,4 +61,6 @@ export {
   oneColumns,
   threeColumns,
   fourColumns,
+  color01,
+  color02,
 };

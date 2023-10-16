@@ -359,6 +359,7 @@ export const products01 = [
     category: "Women",
     title: "Floral Print Wrap Dress",
     price: "$21.50",
+    colors: [{ value: "#949494" }, { value: "#000000" }],
   },
   {
     image: img04,
@@ -388,6 +389,7 @@ export const products02 = [
     category: "Women",
     title: "Floral Print Wrap Dress",
     price: "$21.50",
+    colors: [{ value: "#949494" }, { value: "#000000" }],
   },
   {
     image: img07,
@@ -421,5 +423,6 @@ export const products03 = [
     description:
       "Maecenas vel nisl blandit lorem fermentum rutrum. Phasellus consectetur lacus sodales, euismod urna non, interdum augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean commodo purus neque, iaculis vestibulum mi tristique a. Donec tristique augue magna, ac gravida ligula tempus vitae. Aliquam pulvinar ex vel tellus tincidunt, in luctus turpis posuere. Nulla tincidunt scelerisque leo et consectetur.",
     price: "$21.50",
+    colors: [{ value: "#949494" }, { value: "#000000" }],
   },
 ];

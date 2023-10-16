@@ -27,6 +27,17 @@ export const ProductCard = ({ product }: any) => {
             <p className="text-xl font-bold">{product.title}</p>
           </div>
           <p className="text-md text-[#303030]">{product.description}</p>
+          {product.colors && (
+            <div className="flex gap-2 my-2">
+              {product.colors.map((color: any) => (
+                <div
+                  key={color}
+                  style={{ backgroundColor: color.value }}
+                  className="rounded-full w-5 h-5"
+                />
+              ))}
+            </div>
+          )}
           <p className="mt-6 hover:underline">View Full Details</p>
         </div>
         <div className="flex flex-col items-center justify-center gap-5 font-bold">

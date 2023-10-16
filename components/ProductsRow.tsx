@@ -27,6 +27,17 @@ export const ProductsRow = ({ products, columns }: any) => {
             />
           </div>
           <div className="flex flex-col items-center justify-between p-2">
+            {product.colors ? (
+              <div className="flex gap-2 my-2">
+                {product.colors.map((color: any) => (
+                  <div
+                    key={color}
+                    style={{ backgroundColor: color.value }}
+                    className="rounded-full w-5 h-5"
+                  />
+                ))}
+              </div>
+            ) : <div className="h-9"/>}
             <p className="text-center text-sm lg:whitespace-nowrap lg:text-md font-bold">
               {product.title}
             </p>
