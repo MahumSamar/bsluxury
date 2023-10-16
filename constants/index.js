@@ -5,14 +5,23 @@ import {
   dinersClub,
   discover,
   facebook,
+  fourColumns,
   giftCards,
   img01,
   img02,
+  img03,
+  img04,
+  img05,
+  img06,
+  img07,
+  img08,
   instagram,
   mastercard,
+  oneColumns,
   paypal,
   pinterest,
   shipping,
+  threeColumns,
   tumblr,
   twitter,
   visa,
@@ -237,20 +246,166 @@ export const cards = [
   {
     icon: visa,
     name: "visa",
-  },{
+  },
+  {
     icon: mastercard,
     name: "mastercard",
-  },{
+  },
+  {
     icon: americanExpress,
     name: "americanExpress",
-  },{
+  },
+  {
     icon: paypal,
     name: "paypal",
-  },{
+  },
+  {
     icon: dinersClub,
     name: "dinersClub",
-  },{
+  },
+  {
     icon: discover,
     name: "discover",
+  },
+];
+
+// products selector values
+export const category = [
+  {
+    label: "Women",
+    value: "women",
+  },
+  {
+    label: "Men",
+    value: "men",
+  },
+  {
+    label: "Kids & Babies",
+    value: "kids&babies",
+  },
+  {
+    label: "Pet",
+    value: "pet",
+  },
+  {
+    label: "Jewelry",
+    value: "jewelry",
+  },
+  {
+    label: "SALE",
+    value: "sale",
+  },
+];
+
+export const size = [
+  {
+    label: "X-Small",
+    value: "xs",
+  },
+  {
+    label: "Small",
+    value: "sm",
+  },
+  {
+    label: "Large",
+    value: "lg",
+  },
+  {
+    label: "X-Large",
+    value: "xl",
+  },
+];
+
+export const color = [
+  {
+    label: "White",
+    value: "white",
+  },
+  {
+    label: "Black",
+    value: "black",
+  },
+  {
+    label: "Pink",
+    value: "pink",
+  },
+  {
+    label: "Green",
+    value: "green",
+  },
+];
+
+export const numberOfColumns = [
+  { value: 2, icon: threeColumns, name: "three" },
+  { value: 3, icon: fourColumns, name: "four" },
+  { value: 1, icon: oneColumns, name: "one" },
+];
+
+export const products01 = [
+  {
+    image: img03,
+    category: "Women",
+    title: "Floral Print Wrap Dress",
+    price: "$21.50",
+  },
+  {
+    image: img04,
+    category: "Women",
+    title: "Floral Print Wrap Dress",
+    price: "$21.50",
+    discount:40,
+    originalPrice:"$65.00"
+  },
+  {
+    image: img05,
+    category: "Women",
+    title: "Floral Print Wrap Dress",
+    price: "$21.50",
+  },
+];
+
+export const products02 = [
+  {
+    image: img05,
+    category: "Women",
+    title: "Floral Print Wrap Dress",
+    price: "$21.50",
+  },
+  {
+    image: img06,
+    category: "Women",
+    title: "Floral Print Wrap Dress",
+    price: "$21.50",
+  },
+  {
+    image: img07,
+    category: "Women",
+    title: "Floral Print Wrap Dress",
+    price: "$21.50",
+  },
+  {
+    image: img08,
+    category: "Women",
+    title: "Floral Print Wrap Dress",
+    price: "$21.50",
+  },
+];
+
+export const products03 = [
+  {
+    image: img07,
+    category: "Women",
+    title: "Floral Print Wrap Dress",
+    description:"Maecenas vel nisl blandit lorem fermentum rutrum. Phasellus consectetur lacus sodales, euismod urna non, interdum augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean commodo purus neque, iaculis vestibulum mi tristique a. Donec tristique augue magna, ac gravida ligula tempus vitae. Aliquam pulvinar ex vel tellus tincidunt, in luctus turpis posuere. Nulla tincidunt scelerisque leo et consectetur.",
+    price: "$21.50",
+    discount:40,
+    originalPrice:"$134.00"
+  },
+  {
+    image: img08,
+    category: "Women",
+    title: "Floral Print Wrap Dress",
+    description:"Maecenas vel nisl blandit lorem fermentum rutrum. Phasellus consectetur lacus sodales, euismod urna non, interdum augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean commodo purus neque, iaculis vestibulum mi tristique a. Donec tristique augue magna, ac gravida ligula tempus vitae. Aliquam pulvinar ex vel tellus tincidunt, in luctus turpis posuere. Nulla tincidunt scelerisque leo et consectetur.",
+    price: "$21.50",
   },
 ];
