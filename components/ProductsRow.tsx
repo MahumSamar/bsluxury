@@ -10,6 +10,14 @@ export const ProductsRow = ({ products, columns }: any) => {
     >
       {products.map((product: any, i: any) => (
         <div key={i} className="bg-white rounded-sm drop-shadow-md my-2">
+          {product.discount && (
+            <div className="absolute text-white bg-black top-2 right-2 rounded-full w-12 p-1 text-center flex flex-col">
+              <p>
+                <span className="font-xl font-bold">{product.discount}</span>%
+              </p>
+              <p className="text-xs">OFF</p>
+            </div>
+          )}
           <div>
             <Image
               key={i}
@@ -19,7 +27,7 @@ export const ProductsRow = ({ products, columns }: any) => {
             />
           </div>
           <div className="flex flex-col items-center justify-between p-2">
-            <p className="whitespace-nowrap text-md font-bold">
+            <p className="text-center text-sm lg:whitespace-nowrap lg:text-md font-bold">
               {product.title}
             </p>
             <div className="flex gap-4">
