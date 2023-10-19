@@ -5,20 +5,12 @@ import React from "react";
 export const ProductsRow = ({ products, columns }: any) => {
   return (
     <div
-      className={`grid grid-cols-2 ${
+      className={`grid grid-cols-1 ${
         columns == 3 ? "md:grid-cols-3 gap-12" : "md:grid-cols-4 gap-6"
       }  mt-4`}
     >
       {products.map((product: any, i: any) => (
-        <div key={i} className="relative bg-white rounded-md shadow-md my-2">
-          {product.discount && (
-            <div className="absolute text-white bg-black top-2 right-2 rounded-full w-12 p-1 text-center flex flex-col">
-              <p>
-                <span className="text-xl font-bold">{product.discount}</span>%
-              </p>
-              <p className="text-xs">OFF</p>
-            </div>
-          )}
+        <div key={i} className="bg-white rounded-md shadow-md my-2">
           <div className="relative">
             <Image
               key={i}
@@ -26,6 +18,14 @@ export const ProductsRow = ({ products, columns }: any) => {
               src={product.image}
               className="w-full inset-0 rounded-t-md object-contain z-0"
             />
+            {product.discount && (
+              <div className="absolute text-white bg-black top-2 right-2 rounded-full w-12 p-1 text-center flex flex-col">
+                <p>
+                  <span className="text-xl font-bold">{product.discount}</span>%
+                </p>
+                <p className="text-xs">OFF</p>
+              </div>
+            )}
             <div className="opacity-0 hover:opacity-100 absolute inset-0 z-10 flex items-end justify-between px-4 bottom-3 ">
               <div className="flex items-center justify-between w-full gap-4">
                 <HeartIcon className="w-10 h-8 text-center bg-white rounded-full p-1 hover:cursor-pointer" />
