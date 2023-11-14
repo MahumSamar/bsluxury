@@ -50,7 +50,7 @@ export const ProductCard = ({ product }: any) => {
             <p className="text-xl">{product.price}</p>
           </div>
           <button className="w-full flex items-center justify-center gap-3 rounded-md bg-black text-white py-2 text-md">
-            <Image src={basketWhite} alt="cart" className="w-5" />
+            <Image priority src={basketWhite} alt="cart" className="w-5" />
             ADD TO CART
           </button>
         </div>

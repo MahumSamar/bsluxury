@@ -38,14 +38,14 @@ export const Footer = () => {
         <div className="flex flex-wrap gap-1 mt-2">
           {socials.map((social: any, index: any) => (
             <Link href={social.link} key={index}>
-              <Image src={social.icon} alt={social.name} className="w-7" />
+              <Image priority src={social.icon} alt={social.name} className="w-7" />
             </Link>
           ))}
         </div>
         <p className="text-md md:text-xs lg:text-md xl:text-xl font-bold mt-4">Payment Methods</p>
         <div className="flex flex-wrap gap-1 mt-2">
           {cards.map((card: any, index: any) => (
-            <Image key={index} src={card.icon} alt={card.name} className="w-7" />
+            <Image priority key={index} src={card.icon} alt={card.name} className="w-7" />
           ))}
         </div>
       </div>

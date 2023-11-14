@@ -8,7 +8,7 @@ export const Header = () => {
   return (
     <>
       <div className="bg-[#DBE5DB] flex justify-center items-center gap-5 md:gap-6 p-3">
-        <Image src={shipping} alt="Shipping icon" className="w-8" />
+        <Image priority src={shipping} alt="Shipping icon" className="w-8" />
         <p className="text-xs md:text-md lg:text-xl font-bold">
           FREE SHIPPING ON ORDERS OF $50 OR MORE
         </p>
@@ -22,7 +22,7 @@ export const Header = () => {
           </Link>
           <p>|</p>
           <div className="relative">
-            <Image src={basket} alt="cart" className="w-5"/>
+            <Image priority src={basket} alt="cart" className="w-5"/>
             <div className="absolute top-0 -right-2">
               <p className="flex h-1 w-1 items-center justify-center rounded-full bg-black p-2 text-[12px] text-white">
                 3
